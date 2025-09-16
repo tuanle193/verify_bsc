@@ -8,7 +8,7 @@ class axi_transaction extends uvm_sequence_item;
         WRAP  = 2'b10
     } burst_type_enum;
 
-    rand bit [31:0] add ; // addr start 
+    rand bit [31:0] addr ; // addr start 
     rand bit [7:0]  len  ; // 0 to 255 beats
     rand bit [1:0]  size ; // beat size: 1B, 2B, 4B, 8B
     rand trans_type_enum trans_type;
